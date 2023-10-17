@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte-sequential-preprocessor": "^2.0.1",
 		"sweetalert2": "^11.7.32"
 	}
 }
