@@ -72,7 +72,7 @@
                     <!-- Footer -->
                     <div class="text-center">
                         <span class="text-xs text-gray-400 font-semibold">¿Qué esperas por tener una cuenta?</span>
-                        <a href="/" class="text-xs font-semibold text-purple-700">Registrarse</a>
+                        <a href="/register" class="text-xs font-semibold text-purple-700">Registrarse</a>
                     </div>
                 </form>
             </div>
