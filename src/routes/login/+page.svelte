@@ -1,6 +1,15 @@
 <script>
+    import Swal from "sweetalert2"
     import "../../app.css"
 
+    const trollFunction = () => {
+        Swal.fire({
+            title: "ajaja, trolleado :V",
+            text: "aún no puedes con google",
+            icon: "error",
+            confirmButtonText: "ok guapo"
+        })
+    }
 </script>
 <!-- Container -->
 <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
@@ -33,7 +42,7 @@
   
             <div class="mb-3">
               <button class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Entrar</button>
-              <button class="flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-md">
+              <button class="flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-md" on:click={trollFunction}>
                 <img class="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" alt="">
                 Entrar con Google
               </button>
