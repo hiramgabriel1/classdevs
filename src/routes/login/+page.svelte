@@ -1,91 +1,89 @@
 <script>
-    import Swal from "sweetalert2";
-    import "../../app.css";
-
-    const trollFunction = () => {
-        Swal.fire({
-            title: "ajaja, trolleado :V",
-            text: "aún no puedes con google",
-            icon: "error",
-            confirmButtonText: "ok guapo"
-        });
-    };
+    import Swal from "sweetalert2"
+    import "../../app.css"
 </script>
 
-<style>
-    @media (max-width: 768px) {
-        .flex {
-            flex-direction: column;
-        }
-        .rounded-r-md {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            border-top-right-radius: 0.375rem;
-            border-bottom-right-radius: 0.375rem;
-        }
-        .rounded-l-md {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            border-top-left-radius: 0.375rem;
-            border-bottom-left-radius: 0.375rem;
-        }
-    }
-</style>
-
-<!-- Container -->
-<div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
-
-    <!-- Login component -->
-    <div class="flex flex-wrap justify-center shadow-mxd">
-        <!-- Login form -->
-        <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white" style="width: 100%; max-width: 24rem; min-height: 32rem;">
-            <div class="w-full px-4">
-                <!-- Heading -->
-                <h1 class="text-xl font-semibold">Bienvenido estudiante</h1>
-                <small class="text-gray-400">Ingresa tus datos correctos y no incorrectos xd</small>
-
-                <!-- Form -->
-                <form class="mt-4">
-                    <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold" for="">Email</label>
-                        <input type="email" placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold" for="">Password</label>
-                        <input type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
-                    </div>
-
-                    <div class="mb-3 flex flex-wrap content-center">
-                        <input id="remember" type="checkbox" class="mr-1 checked:bg-purple-700" /> <label for="remember" class="mr-auto text-xs font-semibold">Recordarme por 30 dias</label>
-                        <a href="/" class="text-xs font-semibold text-purple-700">¿Olvidaste tu contraseña prro?</a>
-                    </div>
-
-                    <div class="mb-3">
-                        <button class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Entrar</button>
-                        <button class="flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-md" on:click={trollFunction}>
-                            <img class="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" alt="">
-                            Entrar con Google
-                        </button>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="text-center">
-                        <span class="text-xs text-gray-400 font-semibold">¿Qué esperas por tener una cuenta?</span>
-                        <a href="/register" class="text-xs font-semibold text-purple-700">Registrarse</a>
-                    </div>
-                </form>
+<!-- component -->
+<body class="">
+  <!-- Container -->
+  <div class="container mx-auto">
+    <div class="flex justify-center px-6 my-12">
+      <!-- Row -->
+      <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+        <!-- Col -->
+        <div
+          class="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
+          style="background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800')"
+        ></div>
+        <!-- Col -->
+        <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
+          <h3 class="pt-4 text-2xl text-center">Bievenido estudiante!</h3>
+          <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+            <div class="mb-4">
+              <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                Email
+              </label>
+              <input
+                class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="dante@gmail.com"
+              />
             </div>
+            <div class="mb-4 md:flex md:justify-between">
+              <div class="mb-4 md:mr-2 md:mb-0">
+                <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                  Contraseña
+                </label>
+                <input
+                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="password"
+                  type="password"
+                  placeholder="******************"
+                />
+                <p class="text-xs italic text-red-500">Por favor escriba una contraseña.</p>
+              </div>
+              <div class="md:ml-2">
+                <label class="block mb-2 text-sm font-bold text-gray-700" for="c_password">
+                  Contraseña
+                </label>
+                <input
+                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="c_password"
+                  type="password"
+                  placeholder="******************"
+                />
+              </div>
+            </div>
+            <div class="mb-6 text-center">
+              <button
+                class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                type="button"
+                on:click={trollFunction}
+                >
+                Iniciar sesión
+              </button>
+            </div>
+            <hr class="mb-6 border-t" />
+            <div class="text-center">
+              <a
+                class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                href="#"
+              >
+                ¿Olvidaste tu contraseña?
+              </a>
+            </div>
+            <div class="text-center">
+              <a
+                class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                href="/register"
+              >
+                No tienes una cuenta? Registrate!
+              </a>
+            </div>
+          </form>
         </div>
-
-        <!-- Login banner -->
-        <div class="flex content-center justify-center rounded-r-md" style="width: 100%; max-width: 24rem; min-height: 32rem;">
-            <img class="w-full h-full bg-center bg-no-repeat bg-cover rounded-r-md" src="https://i.imgur.com/9l1A4OS.jpeg" alt="">
-        </div>
+      </div>
     </div>
-
-    <!-- Credit -->
-    <div class="mt-3 w-full">
-        <p class="text-center">Hecho por <a target="_blank" href="https://www.instagram.com/hiram.dev/" class="text-purple-700">Hiram Gabriel</a> el admin</p>
-    </div>
-</div>
+  </div>
+</body>
